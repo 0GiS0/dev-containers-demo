@@ -1,0 +1,35 @@
+{
+	"name": "Debug Configuration",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+	// "build": {
+	// 	"dockerfile": "Dockerfile"
+	// },
+	"dockerComposeFile": "compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces",
+	"features": {
+		"ghcr.io/nikiforovall/devcontainer-features/dotnet-aspire:1": {}
+	},
+	"forwardPorts": [
+		5010		
+	],
+	"portsAttributes": {
+		"5010": {
+			"protocol": "http"
+		}		
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"workbench.colorTheme": "Abyss"
+			},
+			"extensions": [
+				"ms-dotnettools.csdevkit",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	},
+	"postStartCommand": "dotnet watch run --urls http://+:5010"
+}

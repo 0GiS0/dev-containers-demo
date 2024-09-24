@@ -7,7 +7,8 @@
 	// },
 	"dockerComposeFile": "compose.yml",
 	"service": "app",
-	"workspaceFolder": "/workspaces",
+	// "workspaceFolder": "/workspaces",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
 		"ghcr.io/nikiforovall/devcontainer-features/dotnet-aspire:1": {}
 	},

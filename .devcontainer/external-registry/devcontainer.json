@@ -1,5 +1,15 @@
 
 {
-  "name": "Codespace using a private image from Azure Container Registry",
-  "image": "internalcodespacesimages.azurecr.io/codespace-image:main"
+  "name": "Codespace using Azure Container Registry",
+  "image": "internalcodespacesimages.azurecr.io/codespace-image:main",
+
+  "customizations": {
+
+    "vscode": {
+      "settings": {
+        "workbench.colorTheme": "GitHub Light Default"
+      }
+    }
+
+  }
 }

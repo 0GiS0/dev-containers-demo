@@ -1,5 +1,0 @@
-
-{
-  "name": "Codespace using an internal image",
-  "image": "ghcr.io/dragonstone-org/internal-codespaces-image/internal-dragonstone-image:main"
-}

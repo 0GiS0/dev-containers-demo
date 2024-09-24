@@ -1,0 +1,5 @@
+
+{
+  "name": "Codespace using a private image from Azure Container Registry",
+  "image": "internalcodespacesimages.azurecr.io/codespace-image:main"
+}
